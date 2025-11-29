@@ -267,7 +267,8 @@ git status
 git add [nama_file]
 
 atau
-git add .  (buat nambahin semua file yang berubah)
+git add . (buat nambahin semua file yang berubah)
+
 </pre>
 </li>
 <li> Buat melakuin commit pake
@@ -285,6 +286,7 @@ git push origin [nama_branch] (buat spesifik ke branch lain)
 </ol>
 
 <b>Pake Source Control Vscode</b><br>
+
 <ol>
 <li> Buka folder repo pake Vscode</li>
 <li> Klik icon Source Control di sidebar
@@ -293,6 +295,9 @@ git push origin [nama_branch] (buat spesifik ke branch lain)
 <li> Sebelum commit list dulu perubahan yang mau dicommit pake icon + di file yang ada perubahan<br> file yang ditekan + bakal ditandai atau staged buat masuk commit</li>
 <li> Setelah itu ketik pesan commit di kolom atas terus klik icon centang buat commit
 <img src="./assets/isi_source_control.png">
+</li>
+<li> Buat push commit ke repo kltekan "Sync Changes" atau tekan icon ... di pojok kanan atas terus pilih Push
+<img src="./assets/push_source_control.png">
 </li>
 </ol>
 
