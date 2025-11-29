@@ -174,28 +174,126 @@ Rilis fungsional
 <h4><b>GIT</b></h4>
 1. Buka terminal / command prompt<br>
 2. Set username sama email git lewat terminal<br>
-<code>
-git config --global user.name "username" <br>
+
+<pre>
+git config --global user.name "username"
 git config --global user.email "email@example.com"
-</code>
+</pre>
 
 <h4><b>VSCODE</b></h4>
 1. Login github di Vscode<br>
 <img src="./assets/git_vscode.png">
 
 <h4><b>SSH</b></h4>
+<ol>
+  <li>Buka terminal / command prompt.</li>
+  <li>Generate SSH key (jika belum ada):
+    <pre>
+ssh-keygen -t ed25519 -C "your_email@example.com"
+    </pre>
+    Tekan <kbd>Enter</kbd> untuk lokasi default, dan masukkan passphrase jika ingin.
+  </li>
+  <li>Cek file public key di <code>C:\Users\USERNAME\.ssh\id_ed25519.pub</code> (Windows) atau <code>~/.ssh/id_ed25519.pub</code> (Linux/Mac).</li>
+  <li>Copy isi file public key:
+    <pre>
+cat ~/.ssh/id_ed25519.pub
+    </pre>
+    atau buka file tersebut dengan Notepad.
+  </li>
+  <li>Buka <a href="https://github.com/settings/keys">GitHub SSH Keys</a> dan klik <b>New SSH key</b>.
+  <img src="./assets/ssh_dashboard.png">
+  </li>
+  <li>Paste public key ke kolom yang disediakan, beri nama, lalu klik <b>Add SSH key</b>.
+  <img src="./assets/new_ssh_key.png">
+  </li>
+  <li>Test koneksi:
+  ketik perintah berikut di terminal:
+    <pre>
+ssh -T git@github.com
+    </pre>
+    Jika berhasil, akan muncul pesan "Hi username! You've successfully authenticated..."
+  </li>
+  <li>Sekarang bisa clone/push/pull repo dengan SSH, misal:
+    <pre>
+git clone git@github.com:username/repository.git
+    </pre>
+  </li>
+</ol>
 
 </details>
 
 <details open>
-<Summary style="font-weight:bold; " > CONTRIBUTE</Summary>
+<Summary style="font-weight:bold; " > HOW TO CONTRIBUTE</Summary>
 
-Buat Repo
+<h4><b>MEMBUAT REPOSITORY</b></h4>
+Membuat Repository baru untuk bebas ngapain aja
+<b>Instruksi:</b>
+<ol>
+<li>Login ke akun Github</li>
+<li>Masuk tab <a href="https://github.com/orgs/virose-its/repositories">Repositories</a> di Virose Github Organization</li>
+<li>Pilih new repository
+<img src="./assets/repo_list.png">
+<li>Isi form sesuai kebutuhan.
+<img src="./assets/buat_repo.png">
+</li>
+</li>
+</ol>
 
-Clone Repo
+<h4><b>CLONE REPOSITORY</b></h4>
+<b>Instruksi:</b>
+<ol>
+<li> Buka folder yang mau diisi reponya di terminal/command prompt.</li>
+<li> Ketik 
+<pre>
+git clone [link_repo_https]
+</pre>
+</li>
+<li> Link repo bisa didapet di tab "Code" di halaman repository GitHub, pilih "HTTPS" dan salin linknya.
+<img src="./assets/clone_repo.png">
+</li>
+</ol>
 
-Commit
+<h4><b>CONTRIBUTING(COMMIT & PUSH)</b></h4>
+<b>Pake terminal</b><br>
+<ol>
+<li> Buka folder repo yang mau diCommit dan Push di terminal/command prompt.</li>
+<li> Coba cek list perubahan yang ada pake
+<pre>
+git status
+</pre>
+</li>
+<li> buat ngelist file yang mau diCommit pake
+<pre>
+git add [nama_file]
 
-Push
+atau
+git add .  (buat nambahin semua file yang berubah)
+</pre>
+</li>
+<li> Buat melakuin commit pake
+<pre>
+git commit -m "pesan commit"
+</pre>
+</li>
+<li> Buat push commit ke remote repo pake
+<pre>
+git push
+atau
+git push origin [nama_branch] (buat spesifik ke branch lain)
+</pre>
+</li>
+</ol>
+
+<b>Pake Source Control Vscode</b><br>
+<ol>
+<li> Buka folder repo pake Vscode</li>
+<li> Klik icon Source Control di sidebar
+<img src="./assets/source_control_icon.png">
+</li>
+<li> Sebelum commit list dulu perubahan yang mau dicommit pake icon + di file yang ada perubahan<br> file yang ditekan + bakal ditandai atau staged buat masuk commit</li>
+<li> Setelah itu ketik pesan commit di kolom atas terus klik icon centang buat commit
+<img src="./assets/isi_source_control.png">
+</li>
+</ol>
 
 </details>
