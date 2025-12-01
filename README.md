@@ -99,6 +99,21 @@ Action:<br>
 <p>
 <b>TAG DIVISI:</b>
 <ul>
+</ul>
+</p>
+<p>
+<b>ATURAN:</b>
+</p>
+<ul>
+</ul>
+</details>
+
+<br>
+
+<details open>
+<Summary style="font-weight:bold; " > ELECTRICAL</Summary>
+<b>TAG DIVISI:</b>
+<ul>
 <li>ROBOT: untuk board robot utama (atas bawah) </li>
 <li>SPRT : untuk board pendukung robot (interface, bridge, ...)</li>
 <li>RND  : untuk board yang masih dalam fase riset</li>
@@ -112,24 +127,6 @@ Action:<br>
 <li>Jika ada perhitungan atau referensi ditambah di file README</li>
 <li>Buat branch baru buat setiap penugasan yang bersifat adding</li>
 <li>Integrasi harus lewat PULL REQUEST dan menunggu board review</li>
-</ul>
-</details>
-
-<br>
-
-<details open>
-<Summary style="font-weight:bold; " > ELECTRICAL</Summary>
-<b>TAG DIVISI:</b>
-<ul>
-<li>None </li>
-
-</ul>
-</p>
-<p>
-<b>ATURAN:</b>
-</p>
-<ul>
-<li>None</li>
 </ul>
 </details>
 
