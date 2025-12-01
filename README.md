@@ -99,15 +99,19 @@ Action:<br>
 <p>
 <b>TAG DIVISI:</b>
 <ul>
-<li>None </li>
-
+<li>ROBOT: untuk board robot utama (atas bawah) </li>
+<li>SPRT : untuk board pendukung robot (interface, bridge, ...)</li>
+<li>RND  : untuk board yang masih dalam fase riset</li>
 </ul>
 </p>
 <p>
 <b>ATURAN:</b>
 </p>
 <ul>
-<li>None</li>
+<li>Penugasan akan ditaruh notion</li>
+<li>Jika ada perhitungan atau referensi ditambah di file README</li>
+<li>Buat branch baru buat setiap penugasan yang bersifat adding</li>
+<li>Integrasi harus lewat PULL REQUEST dan menunggu board review</li>
 </ul>
 </details>
 
