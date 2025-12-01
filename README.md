@@ -302,3 +302,6 @@ git push origin [nama_branch] (buat spesifik ke branch lain)
 </ol>
 
 </details>
+
+bskajdqondewofnjrnowqdjkc rnjds miednc 
+bkhehdkjvd ndjnc 
